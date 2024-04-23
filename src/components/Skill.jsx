@@ -1,8 +1,24 @@
+import { Link } from "react-router-dom";
+import { FaStar } from "react-icons/fa";
+
 function Skill({ skill }) {
+    let today = new Date();
+    let certificationExpiryDate = new Date(skill.certificationExpiryDate);
+    let certificationStillValid = certificationExpiryDate > today;
+
     return (
-        <div className="flex flex-col w-24 mt-4 mr-4 sm:mt-8 sm:mr-8 shadow-3xl p-4 rounded-lg">
-            <img src={skill.imgUrl} className="h-16 w-16" />
-            <h1 className="text-center mt-2">{skill.name}</h1>
+        <div className="skill">
+            {certificationStillValid &&
+                (
+                    <span className="text-blue-600 absolute top-[-10px] right-[-10px]">
+                        <FaStar size="30" />
+                    </span>
+                )
+            }
+            <Link to={skill.link} target="_blank">
+                <img src={skill.imgUrl} className="h-16 w-16" />
+                <h1 className="text-center mt-2">{skill.name}</h1>
+            </Link>
         </div>
     );
 }
