@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 
-function Skill({ skill }) {
+function Tool({ tool }) {
     let today = new Date();
-    let certificationExpiryDate = new Date(skill.certificationExpiryDate);
+    let certificationExpiryDate = new Date(tool.certificationExpiryDate);
     let certificationStillValid = certificationExpiryDate > today;
 
     return (
-        <div className="skill">
+        <div className="tool">
             {certificationStillValid &&
                 (
                     <span className="text-blue-600 absolute top-[-10px] right-[-10px]">
@@ -15,12 +15,12 @@ function Skill({ skill }) {
                     </span>
                 )
             }
-            <Link to={skill.link} target="_blank">
-                <img src={skill.imgUrl} className="h-16 w-16" />
-                <h1 className="text-center mt-2">{skill.name}</h1>
+            <Link to={tool.link} target="_blank">
+                <img src={tool.imgUrl} className="h-16 w-16" />
+                <h1 className="text-center mt-2">{tool.name}</h1>
             </Link>
         </div>
     );
 }
 
-export default Skill;
+export default Tool;
