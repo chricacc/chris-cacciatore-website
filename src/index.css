@@ -5,7 +5,7 @@
 @layer components {
 
     .page-container {
-        @apply bg-gray-900 min-h-screen w-screen text-gray-50;
+        @apply min-h-screen w-screen text-gray-50 bg-gray-900;
     }
 
     .sidebar-icon {
