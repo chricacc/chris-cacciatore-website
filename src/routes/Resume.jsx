@@ -1,9 +1,11 @@
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import StaticBackground from "../components/StaticBackground";
 
 function Resume() {
     return (
         <div className="page-container">
+            <StaticBackground />
             <div className="relative mx-4 sm:m-16 font-bold">
                 <h1 className="text-8xl">Woops!</h1>
                 <h2 className="text-4xl mt-8">There's nothing here :( ...for now!</h2>
