@@ -9,7 +9,7 @@
     }
 
     .page-container {
-        @apply pb-16 mt-16 sm:mt-0 sm:ml-16 min-h-screen w-screen text-gray-50 bg-gray-900;
+        @apply pb-16 mt-16 sm:mt-0 sm:ml-48 sm:mr-48 min-h-screen w-screen text-gray-50 bg-gray-900;
     }
 
     .sidebar-icon {
@@ -22,6 +22,10 @@
 
     .tool {
         @apply relative flex flex-col w-24 mt-4 mr-4 sm:mt-8 sm:mr-8 shadow-3xl p-4 rounded-lg hover:bg-gray-600/50 transition-all duration-200 cursor-pointer;
+    }
+
+    .resume-block {
+        @apply mt-8 shadow-3xl p-4 rounded-lg hover:bg-gray-600/50 transition-all duration-200;
     }
 
 }

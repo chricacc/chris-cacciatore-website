@@ -19,17 +19,16 @@ function Home() {
     return (
         <div className="page-container">
             <StaticBackground />
-            <div className="relative mx-8 pt-4 md:m-16 md:pt-0">
-                <h1 className="text-5xl sm:text-8xl font-bold">Hi,</h1>
-                <h1 className="text-5xl sm:text-8xl font-bold">I'm Chris,</h1>
-                <h1 className="text-5xl sm:text-8xl font-bold">Software Engineer</h1>
-                <p className="mt-8 ml-1">I have been building IT systems for about 10 years using a great variety of technologies.</p>
-                <h2 className="mt-8 text-xl sm:text-xl font-bold">My Ideal Toolbox</h2>
+            <div className="relative mx-4 pt-4 md:m-16 md:pt-0">
+                <h1 className="text-5xl sm:text-8xl font-bold">Christopher,</h1>
+                <h1 className="text-5xl sm:text-8xl sm:mt-8 font-bold">Software Engineer</h1>
+                <p className="mt-8 ml-1">J'ai passé les 10 dernières années à concevoir des systèmes informatiques en utilisant des technologies variées.</p>
+                <h2 className="mt-8 text-xl sm:text-xl font-bold">Ma Toolbox idéale</h2>
                 <Toolbox tools={tools} />
                 <div className="mt-8 flow-root flex align-center">
                     <span className="inline-flex text-blue-600 mr-1"><FaStar size="15" /> </span>
                     <span className="inline-flex mr-1"><FaArrowRight size="12" /> </span>
-                    <span className="inline-flex"> I passed official certifications for these</span>
+                    <span className="inline-flex"> Je détiens une certification officielle pour cet outil</span>
                 </div>
             </div>
 
