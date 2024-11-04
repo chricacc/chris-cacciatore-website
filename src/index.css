@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Roboto-Regular.woff2) format('woff2');
+    }
+}
+
+
 @layer components {
 
     html {
-        @apply bg-gray-900;
+        @apply bg-gray-900 font-roboto;
     }
 
     .page-container {
@@ -25,7 +36,31 @@
     }
 
     .resume-block {
-        @apply mt-8 shadow-3xl p-4 rounded-lg hover:bg-gray-600/50 transition-all duration-200;
+        @apply pt-5 mt-8 shadow-3xl p-4 rounded-lg hover:bg-gray-600/50 transition-all duration-200;
+    }
+
+    .job-title-wrapper {
+        @apply flex flex-wrap mb-3 align-bottom;
+    }
+
+    .job-title {
+        @apply text-2xl text-blue-500;
+    }
+
+    .job-sector {
+        @apply text-2xl ml-2 text-gray-400;
+    }
+
+    .diploma-title {
+        @apply text-2xl text-blue-500;
+    }
+
+    .diploma-specialty {
+        @apply text-2xl text-gray-400;
+    }
+
+    .skill-section-name {
+        @apply mb-2 text-2xl text-blue-500;
     }
 
 }

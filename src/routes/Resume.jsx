@@ -4,27 +4,205 @@ import StaticBackground from "../components/StaticBackground";
 import Education from "../components/Education";
 import Presentation from "../components/Presentation";
 import WorkExperience from "../components/WorkExperience";
+import Skills from "../components/Skills";
 
 function Resume() {
 
+    let skills = [
+        {
+            "name": "Compétences générales",
+            "skills": [{
+                "name": "Français",
+                "level": 100
+            },
+            {
+                "name": "Anglais",
+                "level": 90
+            },
+            {
+                "name": "Connaissances métier CRM",
+                "level": 70
+            }, {
+                "name": "Pédagogie",
+                "level": 80
+            },]
+        }, {
+            "name": "Plateformes",
+            "skills": [
+                {
+                    "name": "RedHat OpenShift Container Platform",
+                    "level": 80
+                },
+                {
+                    "name": "Kubernetes",
+                    "level": 50
+                },
+                {
+                    "name": "Docker",
+                    "level": 95
+                },
+                {
+                    "name": "Apache",
+                    "level": 95
+                }, {
+                    "name": "JBoss / RedHat EAP",
+                    "level": 70
+                },
+            ],
+        }, {
+            "name": "Développement",
+            "skills": [
+                {
+                    "name": "Java",
+                    "level": 90
+                },
+                {
+                    "name": "Quarkus",
+                    "level": 90
+                }, {
+                    "name": "Spring Boot",
+                    "level": 70
+                }, {
+                    "name": "Hibernate",
+                    "level": 70
+                }, {
+                    "name": "Eclipse MicroProfile",
+                    "level": 85
+                }, {
+                    "name": "Php 8.x",
+                    "level": 70
+                }, {
+                    "name": "JavaScript",
+                    "level": 75
+                }, {
+                    "name": "ReactJS",
+                    "level": 45
+                }, {
+                    "name": "SQL",
+                    "level": 95
+                }, {
+                    "name": "HTML",
+                    "level": 95
+                }, {
+                    "name": "CSS",
+                    "level": 80
+                }, {
+                    "name": "TailwindCSS",
+                    "level": 65
+                }]
+        },
+        {
+            "name": "Intégration",
+            "skills": [
+                {
+                    "name": "Apache Camel",
+                    "level": 90
+                },
+                {
+                    "name": "Talend",
+                    "level": 30
+                },
+            ],
+        },
+        {
+            "name": "Infrastructure / Sécurité / Monitoring",
+            "skills": [
+                {
+                    "name": "Environnements Linux (RedHat/CentOS, Fedora, Debian/Ubuntu)",
+                    "level": 95
+                }, {
+                    "name": "Keycloak / RedHat SSO",
+                    "level": 90
+                }, {
+                    "name": "RedHat 3Scale Api Management",
+                    "level": 70
+                }, {
+                    "name": "Cloudflare",
+                    "level": 45
+                }, {
+                    "name": "Traefik",
+                    "level": 55
+                }, {
+                    "name": "Jaeger",
+                    "level": 55
+                }, {
+                    "name": "NewRelic",
+                    "level": 65
+                },
+            ],
+        },
+        {
+            "name": "Architectures logicielles",
+            "skills": [
+                {
+                    "name": "Architectures orientées services (REST, SOAP, GraphQL...)",
+                    "level": 90
+                },
+                {
+                    "name": "Architectures Microservices",
+                    "level": 95
+                }, {
+                    "name": "Architectures Middleware",
+                    "level": 70
+                }, {
+                    "name": "Enterprise Integration Patterns",
+                    "level": 65
+                }, {
+                    "name": "Design Patterns",
+                    "level": 85
+                },]
+        },
+        {
+            "name": "Méthodologies",
+            "skills": [
+                {
+                    "name": "Scrum",
+                    "level": 80
+                }, {
+                    "name": "BPMN",
+                    "level": 50
+                }, {
+                    "name": "UML",
+                    "level": 65
+                },
+            ],
+        }, {
+            "name": "Outils",
+            "skills": [
+                {
+                    "name": "Git",
+                    "level": 95
+                }, {
+                    "name": "Suite JetBrains",
+                    "level": 95
+                },
+            ],
+        },
+
+    ];
+
     let schools = [
         {
-            "title": "Master Informatique spécialité Génie Logiciel parcours Conduite de Projet",
+            "title": "Master Informatique",
+            "specialty": "Spécialité Génie Logiciel parcours Conduite de Projet",
             "school": "Université Bordeaux 1",
             "year": 2014
         },
         {
             "title": "Licence Informatique",
+            "specialty": "Spécialité Génie Logiciel",
             "school": "Université Bordeaux 1",
             "year": 2012
         },
         {
-            "title": "Diplôme Universitaire de Technologie Informatique",
+            "title": "DUT Informatique",
+            "specialty": "Spécialité Génie Logiciel",
             "school": "IUT de Metz",
             "year": 2010
         },
         {
-            "title": "Baccalauréat scientifique option Sciences de l\’Ingénieur",
+            "title": "Baccalauréat scientifique",
+            "specialty": "option Sciences de l\’Ingénieur",
             "school": "Lycée Louis Bertrand, Briey (54)",
             "year": 2008
         }
@@ -32,13 +210,28 @@ function Resume() {
 
     let jobs = [
         {
+            "start": "Janvier 2023",
+            "end": "Février 2024",
+            "title": "Architecte Technique",
+            "company": "ITs4U Luxembourg - MySaam",
+            "sector": "Comptabilité/Gestion",
+            "activities": [
+                "Encadrement technique d'une équipe de développeurs",
+                "Choix d'architecture et documentation",
+                "Optimisations et apport d'expertise sur OpenShift",
+                "Recherche et Développement en vue d'une intégration entre la solution MySaam Vision et Microsoft360",
+                "Mise en place d'une plateforme d'intégration continue basée sur Tekton et Jenkins"
+            ],
+            "environment": ["OpenShift", "Java", "Quarkus", "MySQL", "MongoDB", "REST", "Tekton", "Jenkins", "Buildah", "SonarQube", "Git"]
+        },
+        {
             "start": "Septembre 2020",
             "end": "Présent",
             "title": "Expert Technique",
             "company": "ITs4U Luxembourg - ICADE Foncière",
-            "sector": "Immobilier",
+            "sector": "Immobilier d'Entreprise",
             "activities": [
-                "Développement de personnalisations sur le produit Sugar (Php 8, JavaScript)",
+                "Développement de personnalisations sur le CRM Sugar (Php 8, JavaScript)",
                 "Optimisation et refonte des flux d’imports de données",
                 "Encadrement technique de l’équipe de développement en place",
                 "Choix techniques"
@@ -50,7 +243,7 @@ function Resume() {
             "end": "Présent",
             "title": "Expert Technique",
             "company": "ITs4U Luxembourg - Batigère",
-            "sector": "Immobilier",
+            "sector": "Immobilier social",
             "activities": [
                 "Développement middleware basé sur OpenShift, développement et déploiement d’applicatifs avec Thorntail, Quarkus, Apache Camel",
                 "Sécurisation via Red Hat SSO",
@@ -65,10 +258,10 @@ function Resume() {
             "end": "Décembre 2023",
             "title": "Expert Technique",
             "company": "ITs4U Luxembourg - Cilgere / Action Logement / Ma Nouvelle Ville",
-            "sector": "Immobilier",
+            "sector": "Immobilier social",
             "activities": [
                 "Développement middleware : plateforme d’intégration basée sur Docker et frameworks Java tels que Spring Boot, Thorntail, Quarkus, Apache Camel",
-                "Interfaçage entre Sugar et une multitude de systèmes tiers (DocuSign, Actito, Ubiflow)",
+                "Interfaçage entre le CRM Sugar et une multitude de systèmes tiers (DocuSign, Actito, Ubiflow)",
                 "Formation et encadrement d’une équipe de développeurs juniors",
                 "Conseils en architecture et choix techniques"
             ],
@@ -111,7 +304,8 @@ function Resume() {
                 "Écriture et exécution de scénarios de tests d'intégration",
                 "Assistance aux mises en production"
             ],
-            "environment": ["Java EE", "Java 7", "JSF2", "Spring", "Hibernate", "Maven", "Tomcat", "JUnit", "Hudson", "Sonar", "SVN"]
+            "environment": ["Java EE", "Java 7", "JSF2", "Spring", "Hibernate", "Maven", "Tomcat", "JUnit", "Hudson", "Sonar", "SVN"],
+            "sector": "Gestion Portuaire"
         },
         {
             "start": "Avril 2014",
@@ -124,7 +318,8 @@ function Resume() {
                 "Rédaction de spécifications, développement, tests, déploiement, recette",
                 "Méthodologie SCRUM"
             ],
-            "environment": ["Java EE", "SCRUM"]
+            "environment": ["Java EE", "SCRUM"],
+            "sector": "Ressources Humaines"
         },
         {
             "start": "Juin 2012",
@@ -137,7 +332,8 @@ function Resume() {
                 "Étude préalable au développement d'un work-flow manager",
                 "Rédaction de documents techniques et formation des utilisateurs"
             ],
-            "environment": ["VB.NET", "SQLite"]
+            "environment": ["VB.NET", "SQLite"],
+            "sector": "Industriel"
         },
         {
             "start": "Avril 2010",
@@ -150,7 +346,8 @@ function Resume() {
                 "Formation personnalisée des utilisateurs",
                 "Gestion autonome du temps et reportings réguliers à la hiérarchie"
             ],
-            "environment": ["ASP.NET", "JavaScript"]
+            "environment": ["ASP.NET", "JavaScript"],
+            "sector": "Industriel"
         }
     ];
 
@@ -158,8 +355,12 @@ function Resume() {
         <div className="page-container">
             <StaticBackground />
             <div className="relative mx-4 sm:m-16">
-                <h1 className="text-5xl sm:text-8xl font-bold">Curriculum Vitae</h1>
+                <div className="page-title flex flex-wrap">
+                    <div className="text-5xl sm:text-8xl font-bold">CHRISTOPHER</div>
+                    <div className="text-5xl sm:text-8xl font-bold text-blue-600">CACCIATORE</div>
+                </div>
                 <Presentation />
+                <Skills skills={skills} />
                 <WorkExperience jobs={jobs} />
                 <Education diplomas={schools} />
 

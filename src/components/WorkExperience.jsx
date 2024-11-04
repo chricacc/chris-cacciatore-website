@@ -5,7 +5,7 @@ function WorkExperience({ jobs }) {
     return (
         jobs &&
         <div className="resume-block">
-            <div className="text-4xl font-bold mb-4 flex flex-wrap">
+            <div className="text-4xl font-bold mb-4 flex">
                 <span className="mr-4"> <FaBuilding /> </span>
                 <span>Expérience professionnelle</span>
             </div>
