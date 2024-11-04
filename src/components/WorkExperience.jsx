@@ -1,10 +1,14 @@
+import { FaBuilding } from "react-icons/fa";
 import Job from "./Job";
 
 function WorkExperience({ jobs }) {
     return (
         jobs &&
         <div className="resume-block">
-            <h2 className="text-4xl font-bold mb-4">Expérience professionnelle</h2>
+            <div className="text-4xl font-bold mb-4 flex flex-wrap">
+                <span className="mr-4"> <FaBuilding /> </span>
+                <span>Expérience professionnelle</span>
+            </div>
             <div className="">
                 {
                     jobs.map((job, index) => {

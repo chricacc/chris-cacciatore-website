@@ -1,8 +1,12 @@
+import { FaUser } from "react-icons/fa";
 
 function Presentation() {
     return (
         <div className="resume-block">
-            <h2 className="text-4xl font-bold mb-4">Présentation</h2>
+            <div className="text-4xl font-bold mb-4 flex flex-wrap">
+                <span className="mr-4"> <FaUser /> </span>
+                <span>Présentation</span>
+            </div>
             <div className="">
                 Expert technique et développeur senior, je dispose d’une expérience de 10 ans avec de nombreux projets à mon actif. Lors de mes précédentes missions, j’ai pu développer des applications sur divers socles techniques, pour des clients appartenant à des domaines variés (immobilier, Assurance, Gestion portuaire…). J’ai également pu accompagner ces clients dans leurs choix technologiques et architecturaux, former et accompagner de nouveaux développeurs au sein de ma propre entreprise mais également côté client.
 
