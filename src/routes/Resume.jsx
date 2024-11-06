@@ -257,7 +257,7 @@ function Resume() {
             "start": "Septembre 2015",
             "end": "Décembre 2023",
             "title": "Expert Technique",
-            "company": "ITs4U Luxembourg - Cilgere / Action Logement / Ma Nouvelle Ville",
+            "company": "ITs4U Luxembourg - Action Logement",
             "sector": "Immobilier social",
             "activities": [
                 "Développement middleware : plateforme d’intégration basée sur Docker et frameworks Java tels que Spring Boot, Thorntail, Quarkus, Apache Camel",

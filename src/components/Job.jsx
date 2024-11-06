@@ -7,11 +7,11 @@ function Job({ job }) {
         <div className="job mb-8">
             <div className="job-title-wrapper">
                 <div className="job-title">{job.title}</div>
-                <div className="job-sector">- Secteur {job.sector}</div>
             </div>
             <div className="flex flex-wrap mb-2">
                 <span className="mr-2 mt-1"><FaBuilding /></span>
                 <div className="font-bold">{job.company}</div>
+                <div className="job-sector">- Secteur {job.sector}</div>
             </div>
             <div className="flex flex-wrap mb-2">
                 <span className="mr-2 mt-1"><FaCalendarDays /></span>

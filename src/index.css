@@ -56,7 +56,7 @@
     }
 
     .job-sector {
-        @apply text-2xl ml-2 text-gray-400;
+        @apply ml-2 text-gray-400;
     }
 
     .diploma-title {
