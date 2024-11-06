@@ -1,10 +1,11 @@
-import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaMusic } from "react-icons/fa";
 import StaticBackground from "../components/StaticBackground";
 import Education from "../components/Education";
 import Presentation from "../components/Presentation";
 import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
+import { FaScrewdriverWrench } from "react-icons/fa6";
+import HireMe from "../components/HireMe";
 
 function Resume() {
 
@@ -14,12 +15,10 @@ function Resume() {
             "skills": [{
                 "name": "Français",
                 "level": 100
-            },
-            {
-                "name": "Anglais",
+            }, {
+                "name": "Anglais (TOEIC 955/990)",
                 "level": 90
-            },
-            {
+            }, {
                 "name": "Connaissances métier CRM",
                 "level": 70
             }, {
@@ -32,21 +31,17 @@ function Resume() {
                 {
                     "name": "Environnements Linux (RedHat/CentOS, Fedora, Debian/Ubuntu)",
                     "level": 95
-                },
-                {
+                }, {
                     "name": "Docker",
                     "level": 95
-                },
-                {
+                }, {
                     "name": "RedHat OpenShift Container Platform",
-                    "level": 80
-                },
-                {
+                    "level": 80,
+                    "certificationExpiryDate": "2025-12-31"
+                }, {
                     "name": "Kubernetes",
                     "level": 30
-                },
-
-                {
+                }, {
                     "name": "Apache",
                     "level": 95
                 }, {
@@ -60,8 +55,7 @@ function Resume() {
                 {
                     "name": "Java",
                     "level": 90
-                },
-                {
+                }, {
                     "name": "Quarkus",
                     "level": 90
                 }, {
@@ -102,8 +96,7 @@ function Resume() {
                 {
                     "name": "Apache Camel",
                     "level": 90
-                },
-                {
+                }, {
                     "name": "Talend",
                     "level": 30
                 },
@@ -139,8 +132,7 @@ function Resume() {
                 {
                     "name": "Architectures orientées services (REST, SOAP, GraphQL...)",
                     "level": 90
-                },
-                {
+                }, {
                     "name": "Architectures Microservices",
                     "level": 95
                 }, {
@@ -172,11 +164,21 @@ function Resume() {
             "name": "Outils",
             "skills": [
                 {
+                    "name": "Jira",
+                    "level": 80
+                }, {
+                    "name": "Confluence",
+                    "level": 90
+                },
+                {
                     "name": "Git",
                     "level": 95
                 }, {
-                    "name": "Suite JetBrains",
+                    "name": "Suite IDE JetBrains",
                     "level": 95
+                }, {
+                    "name": "Adobe Photoshop",
+                    "level": 60
                 },
             ],
         },
@@ -185,8 +187,31 @@ function Resume() {
 
     let schools = [
         {
+            "title": "Certification RedHat",
+            "specialty": "OpenShift Developer (EX288)",
+            "school": "Examen en ligne",
+            "year": 2023
+        },
+        {
+            "title": "Certification RedHat",
+            "specialty": "Apache Camel Developer",
+            "school": "Examen en ligne",
+            "year": 2019
+        },
+        {
+            "title": "Certification SugarCRM",
+            "specialty": "Sugar Architect",
+            "school": "Examen en ligne",
+            "year": 2018
+        }, {
+            "title": "Certification SugarCRM",
+            "specialty": "Sugar Developer",
+            "school": "Examen en ligne",
+            "year": 2016
+        },
+        {
             "title": "Master Informatique",
-            "specialty": "Spécialité Génie Logiciel parcours Conduite de Projet",
+            "specialty": "Spécialité Génie Logiciel",
             "school": "Université Bordeaux 1",
             "year": 2014
         },
@@ -353,6 +378,48 @@ function Resume() {
         }
     ];
 
+    let hobbies = [
+        {
+            "name": "Musique",
+            "skills": [
+                {
+                    "name": "Guitare",
+                    "level": 85
+                }, {
+                    "name": "MAO/Enregistrement",
+                    "level": 80
+                }, {
+                    "name": "Basse",
+                    "level": 65
+                }, {
+                    "name": "Composition",
+                    "level": 65
+                }, {
+                    "name": "Théorie musicale",
+                    "level": 70
+                }, {
+                    "name": "Réparation guitares/basses",
+                    "level": 60
+                }
+            ]
+        },
+        {
+            "name": "Photographie",
+            "skills": [{
+                "name": "Paysage",
+                "level": 80
+            }, {
+                "name": "Portrait",
+                "level": 60
+            }, {
+                "name": "Astrophotographie",
+                "level": 70
+            }, {
+                "name": "Traitement/retouche",
+                "level": 80
+            },]
+        }];
+
     return (
         <div className="page-container">
             <StaticBackground />
@@ -375,12 +442,17 @@ function Resume() {
                         <WorkExperience jobs={jobs} />
                     </div>
                     <div className="col-span-1">
-                        <Skills skills={skills} />
+                        <Skills skills={skills} sectionTitle="Compétences" icon={<FaScrewdriverWrench />} />
                     </div>
-                    <div className="col-span-3">
+                    <div className="col-span-2">
                         <Education diplomas={schools} />
                     </div>
-
+                    <div className="col-span-1">
+                        <Skills skills={hobbies} sectionTitle="Loisirs" icon={<FaMusic />} />
+                    </div>
+                </div>
+                <div className="w-full">
+                    <HireMe />
                 </div>
             </div>
         </div >

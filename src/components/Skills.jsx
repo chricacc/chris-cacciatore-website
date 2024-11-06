@@ -1,14 +1,14 @@
 import { FaScrewdriverWrench } from "react-icons/fa6";
 import Skill from "./Skill";
 
-function Skills({ skills }) {
+function Skills({ skills, sectionTitle, icon }) {
 
     return (
         skills &&
         <div className="resume-block ">
             <div className="resume-block-title">
-                <span className="mr-4"> <FaScrewdriverWrench /> </span>
-                <span>Compétences</span>
+                <span className="mr-4"> {icon} </span>
+                <span>{sectionTitle}</span>
             </div>
 
             {skills.map((section, index) => {
@@ -17,7 +17,7 @@ function Skills({ skills }) {
                         <div className="skill-section-name">{section.name}</div>
                         {
                             section.skills.map((skill, index) => {
-                                return (<Skill name={skill.name} level={skill.level} key={index + 1} />)
+                                return (<Skill name={skill.name} level={skill.level} certificationExpiryDate={skill.certificationExpiryDate} key={index + 1} />)
                             })
                         }
                     </div>

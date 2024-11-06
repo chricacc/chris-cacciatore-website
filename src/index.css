@@ -24,11 +24,11 @@
     }
 
     .page-title {
-        @apply w-full text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+        @apply w-full md:pb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl
     }
 
     .page-content {
-        @apply relative pt-6 mx-4 md:pl-16 md:mx-[10%] xl:mx-[13%] md:mt-12;
+        @apply relative pt-6 mx-4 md:pl-16 md:mx-[10%] xl:mx-[13%] md:mt-6;
     }
 
     .sidebar-icon {
@@ -64,11 +64,11 @@
     }
 
     .diploma-title {
-        @apply text-2xl text-blue-500;
+        @apply text-xl xl:text-2xl text-blue-500;
     }
 
     .diploma-specialty {
-        @apply text-2xl text-gray-400;
+        @apply text-xl xl:text-2xl text-gray-400;
     }
 
     .skill-section-name {

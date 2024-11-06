@@ -8,7 +8,7 @@ function Home() {
 
     let tools = [
         { name: "Docker", imgUrl: "docker.svg", link: "https://www.docker.com/" },
-        { name: "Quarkus", imgUrl: "quarkus.png", link: "https://quarkus.io/", certificationExpiryDate: "2025-12-31" },
+        { name: "Quarkus", imgUrl: "quarkus.png", link: "https://quarkus.io/" },
         { name: "OpenShift", imgUrl: "openshift.png", link: "https://www.redhat.com/en/technologies/cloud-computing/openshift", certificationExpiryDate: "2025-12-31" },
         { name: "Keycloak", imgUrl: "keycloak.svg", link: "https://www.keycloak.org/" },
         { name: "Tailwind", imgUrl: "tailwind.svg", link: "https://tailwindcss.com" },
