@@ -20,11 +20,15 @@
     }
 
     .page-container {
-        @apply pb-16 mt-16 md:mt-0 min-h-screen w-screen text-gray-50 bg-gray-900;
+        @apply pb-16 mt-16 md:mt-0 min-h-screen w-screen text-gray-200 bg-gray-900;
+    }
+
+    .page-title {
+        @apply w-full text-4xl sm:text-5xl md:text-6xl lg:text-7xl
     }
 
     .page-content {
-        @apply relative pt-6 mx-4 md:ml-[15%] md:mr-[15%] md:mt-16;
+        @apply relative pt-6 mx-4 md:pl-16 md:mx-[10%] xl:mx-[13%] md:mt-12;
     }
 
     .sidebar-icon {

@@ -1,5 +1,5 @@
 import SidebarIcon from "./SidebarIcon";
-import { FaHome, FaBook, FaGithub } from "react-icons/fa";
+import { FaHome, FaBook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Sidebar() {
 
@@ -9,6 +9,7 @@ function Sidebar() {
                 <SidebarIcon icon={<FaHome size="25" />} path="/" />
                 <SidebarIcon icon={<FaBook size="25" />} text="CV" path="/resume" />
                 <SidebarIcon icon={<FaGithub size="25" />} text="GitHub" path="https://github.com/chricacc" external="true" />
+                <SidebarIcon icon={<FaLinkedin size="25" />} text="LinkedIn" path="https://fr.linkedin.com/in/christopher-cacciatore-67341685" external="true" />
             </div>
         </>
     );

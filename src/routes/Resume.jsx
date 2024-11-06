@@ -30,6 +30,14 @@ function Resume() {
             "name": "Plateformes",
             "skills": [
                 {
+                    "name": "Environnements Linux (RedHat/CentOS, Fedora, Debian/Ubuntu)",
+                    "level": 95
+                },
+                {
+                    "name": "Docker",
+                    "level": 95
+                },
+                {
                     "name": "RedHat OpenShift Container Platform",
                     "level": 80
                 },
@@ -37,10 +45,7 @@ function Resume() {
                     "name": "Kubernetes",
                     "level": 30
                 },
-                {
-                    "name": "Docker",
-                    "level": 95
-                },
+
                 {
                     "name": "Apache",
                     "level": 95
@@ -108,9 +113,6 @@ function Resume() {
             "name": "Infrastructure / Sécurité / Monitoring",
             "skills": [
                 {
-                    "name": "Environnements Linux (RedHat/CentOS, Fedora, Debian/Ubuntu)",
-                    "level": 95
-                }, {
                     "name": "Keycloak / RedHat SSO",
                     "level": 90
                 }, {
@@ -286,14 +288,14 @@ function Resume() {
             "company": "ITs4U Luxembourg - Proximus",
             "sector": "Télécommunications",
             "activities": [
-                "Développement middleware : interfaçage du CRM avec le SI via RedHat Fuse"
+                "Développement middleware : interfaçage du CRM Sugar avec le SI via RedHat Fuse"
             ],
             "environment": ["Sugar 7.x", "RedHat Fuse", "Maven", "PHP 5", "HTML 5", "Javascript", "JSON", "REST", "MySQL"]
         },
         {
             "start": "Octobre 2014",
             "end": "Août 2015",
-            "title": "Ingénieur d'études Java EE",
+            "title": "Développeur Java EE",
             "company": "Infotel / Grand Port Maritime de Bordeaux",
             "project": "Projet VIGIEsip",
             "activities": [
@@ -338,7 +340,7 @@ function Resume() {
         {
             "start": "Avril 2010",
             "end": "Juin 2010",
-            "title": "Développeur web ASP.NET/JavaScript",
+            "title": "Développeur ASP.NET/JavaScript",
             "company": "SOVAB (Filiale Renault) – Batilly (54)",
             "position": "Stage de fin de D.U.T",
             "activities": [
@@ -355,10 +357,15 @@ function Resume() {
         <div className="page-container">
             <StaticBackground />
             <div className="page-content">
-                <div className="page-title flex flex-wrap">
-                    <div className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mr-2 sm:mr-4">CHRISTOPHER</div>
-                    <div className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-blue-600">CACCIATORE</div>
+                <div className="page-title ">
+                    <div className="flex flex-wrap">
+                        <div className="font-bold text-center w-full">CHRISTOPHER CACCIATORE</div>
+                    </div>
+                    <div className="flex flex-wrap mt-4">
+                        <div className="text-center w-full mr-2 sm:mr-4 text-blue-500">Software Engineer</div>
+                    </div>
                 </div>
+
                 <div className="lg:grid lg:grid-cols-3 lg:gap-4">
 
                     <div className="col-span-3">
@@ -375,15 +382,6 @@ function Resume() {
                     </div>
 
                 </div>
-
-
-                <p className="mt-8">Pour me contacter, vous pouvez passer par LinkedIn :</p>
-                <div className="mt-8 text-blue-600 hover:text-gray-100">
-                    <Link to="https://fr.linkedin.com/in/christopher-cacciatore-67341685" target="_blank">
-                        <FaLinkedin size="80" />
-                    </Link>
-                </div>
-
             </div>
         </div >
     );
