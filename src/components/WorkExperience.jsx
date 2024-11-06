@@ -4,8 +4,8 @@ import Job from "./Job";
 function WorkExperience({ jobs }) {
     return (
         jobs &&
-        <div className="resume-block">
-            <div className="text-4xl font-bold mb-4 flex">
+        <div className="resume-block ">
+            <div className="resume-block-title">
                 <span className="mr-4"> <FaBuilding /> </span>
                 <span>Expérience professionnelle</span>
             </div>

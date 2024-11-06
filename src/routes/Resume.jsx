@@ -35,7 +35,7 @@ function Resume() {
                 },
                 {
                     "name": "Kubernetes",
-                    "level": 50
+                    "level": 30
                 },
                 {
                     "name": "Docker",
@@ -354,15 +354,28 @@ function Resume() {
     return (
         <div className="page-container">
             <StaticBackground />
-            <div className="relative mx-4 sm:m-16">
+            <div className="page-content">
                 <div className="page-title flex flex-wrap">
-                    <div className="text-5xl sm:text-8xl font-bold">CHRISTOPHER</div>
-                    <div className="text-5xl sm:text-8xl font-bold text-blue-600">CACCIATORE</div>
+                    <div className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mr-2 sm:mr-4">CHRISTOPHER</div>
+                    <div className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-blue-600">CACCIATORE</div>
                 </div>
-                <Presentation />
-                <Skills skills={skills} />
-                <WorkExperience jobs={jobs} />
-                <Education diplomas={schools} />
+                <div className="lg:grid lg:grid-cols-3 lg:gap-4">
+
+                    <div className="col-span-3">
+                        <Presentation />
+                    </div>
+                    <div className="col-span-2">
+                        <WorkExperience jobs={jobs} />
+                    </div>
+                    <div className="col-span-1">
+                        <Skills skills={skills} />
+                    </div>
+                    <div className="col-span-3">
+                        <Education diplomas={schools} />
+                    </div>
+
+                </div>
+
 
                 <p className="mt-8">Pour me contacter, vous pouvez passer par LinkedIn :</p>
                 <div className="mt-8 text-blue-600 hover:text-gray-100">

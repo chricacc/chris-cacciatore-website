@@ -19,11 +19,11 @@ function Home() {
     return (
         <div className="page-container">
             <StaticBackground />
-            <div className="relative mx-4 pt-4 md:m-16 md:pt-0">
-                <h1 className="text-5xl sm:text-8xl font-bold">Christopher,</h1>
-                <h1 className="text-5xl sm:text-8xl sm:mt-8 font-bold">Software Engineer</h1>
+            <div className="page-content">
+                <h1 className="text-5xl md:text-8xl font-bold">Christopher,</h1>
+                <h1 className="text-5xl md:text-8xl md:mt-8 font-bold">Software Engineer</h1>
                 <p className="mt-8 ml-1">J'ai passé les 10 dernières années à concevoir des systèmes informatiques en utilisant des technologies variées.</p>
-                <h2 className="mt-8 text-xl sm:text-xl font-bold">Ma Toolbox idéale</h2>
+                <h2 className="mt-8 text-xl md:text-xl font-bold">Ma Toolbox idéale</h2>
                 <Toolbox tools={tools} />
                 <div className="mt-8 flow-root flex align-center">
                     <span className="inline-flex text-blue-600 mr-1"><FaStar size="15" /> </span>

@@ -5,8 +5,8 @@ function Skills({ skills }) {
 
     return (
         skills &&
-        <div className="resume-block">
-            <div className="text-4xl font-bold mb-4 flex">
+        <div className="resume-block ">
+            <div className="resume-block-title">
                 <span className="mr-4"> <FaScrewdriverWrench /> </span>
                 <span>Compétences</span>
             </div>

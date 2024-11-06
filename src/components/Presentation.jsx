@@ -3,7 +3,7 @@ import { FaUser } from "react-icons/fa";
 function Presentation() {
     return (
         <div className="resume-block">
-            <div className="text-4xl font-bold mb-4 flex flex-wrap">
+            <div className="resume-block-title">
                 <span className="mr-4"> <FaUser /> </span>
                 <span>Présentation</span>
             </div>

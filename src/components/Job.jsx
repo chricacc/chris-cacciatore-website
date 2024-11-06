@@ -4,7 +4,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 function Job({ job }) {
 
     return (
-        <div className="job mt-8">
+        <div className="job mb-8">
             <div className="job-title-wrapper">
                 <div className="job-title">{job.title}</div>
                 <div className="job-sector">- Secteur {job.sector}</div>

@@ -5,7 +5,7 @@ function Education({ diplomas }) {
     return (
         diplomas &&
         <div className="resume-block">
-            <div className="text-4xl font-bold mb-4 flex">
+            <div className="resume-block-title">
                 <span className="mr-4"> <FaUserGraduate /> </span>
                 <span>Formation</span>
             </div>
