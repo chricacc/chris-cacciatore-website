@@ -43,6 +43,10 @@
         @apply relative flex flex-col w-24 mt-4 mr-4 md:mt-8 md:mr-8 shadow-3xl p-4 rounded-lg hover:bg-gray-600/50 transition-all duration-200 cursor-pointer;
     }
 
+    .tag {
+        @apply shadow-3xl p-4 rounded-lg hover:bg-gray-600/50 transition-all duration-200 cursor-pointer;
+    }
+
     .resume-block {
         @apply h-full pt-5 mt-8 shadow-3xl p-4 rounded-lg hover:bg-gray-600/50 transition-all duration-200;
     }

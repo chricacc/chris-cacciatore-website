@@ -74,8 +74,14 @@ function Resume() {
                     "name": "JavaScript",
                     "level": 75
                 }, {
+                    "name": "TypeScript",
+                    "level": 70
+                }, {
                     "name": "ReactJS",
-                    "level": 45
+                    "level": 60
+                }, {
+                    "name": "NextJS",
+                    "level": 60
                 }, {
                     "name": "SQL",
                     "level": 95
@@ -87,6 +93,9 @@ function Resume() {
                     "level": 80
                 }, {
                     "name": "TailwindCSS",
+                    "level": 70
+                }, {
+                    "name": "ShadCN",
                     "level": 65
                 }]
         },
@@ -130,7 +139,7 @@ function Resume() {
             "name": "Architectures logicielles",
             "skills": [
                 {
-                    "name": "Architectures orientées services (REST, SOAP, GraphQL...)",
+                    "name": "Architectures orientées services (REST, SOAP...)",
                     "level": 90
                 }, {
                     "name": "Architectures Microservices",
