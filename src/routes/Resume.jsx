@@ -255,6 +255,7 @@ function Resume() {
                 "Cadrage technique d'un upgrade Spring Boot de masse sur un parc de 90 microservices",
                 "Audit préalable et état des lieux sur la dette technique, ainsi que les pratiques DevOps",
                 "Recommandations de pratiques et d'outils",
+                "Semi-automatisation des upgrades avec OpenRewrite (règles custom)",
                 "Encadrement technique d'une équipe de développeurs réalisant les upgrades",
                 "Encadrement technique d'une équipe de développeurs participant à divers projets métier",
                 "Animation d'ateliers Craft et présentations techniques"
