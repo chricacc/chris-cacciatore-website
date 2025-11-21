@@ -260,7 +260,7 @@ function Resume() {
                 "Encadrement technique d'une équipe de développeurs participant à divers projets métier",
                 "Animation d'ateliers Craft et présentations techniques"
             ],
-            "environment": ["OpenShift", "Java", "Spring Boot", "Microservices", "REST", "Accelerate"]
+            "environment": ["OpenShift", "Java", "Spring Boot", "OpenRewrite", "Red Hat Migration Toolkit", "Microservices", "REST", "OAuth2/OpenID-Connect", "Accelerate"]
         },
         {
             "start": "Janvier 2023",
@@ -278,20 +278,6 @@ function Resume() {
             "environment": ["OpenShift", "Java", "Quarkus", "MySQL", "MongoDB", "REST", "Tekton", "Jenkins", "Buildah", "SonarQube", "Git"]
         },
         {
-            "start": "Septembre 2020",
-            "end": "Décembre 2024",
-            "title": "Expert Technique",
-            "company": "ITs4U Luxembourg - ICADE Foncière",
-            "sector": "Immobilier d'Entreprise",
-            "activities": [
-                "Développement de personnalisations sur le CRM Sugar (Php 8, JavaScript)",
-                "Optimisation et refonte des flux d’imports de données",
-                "Encadrement technique de l’équipe de développement en place",
-                "Choix techniques"
-            ],
-            "environment": ["Sugar 12.0", "Php 8", "MySQL", "Docker", "REST"]
-        },
-        {
             "start": "Décembre 2015",
             "end": "Décembre 2024",
             "title": "Expert Technique",
@@ -304,7 +290,7 @@ function Resume() {
                 "Mise en place d’une Plateforme d’Intégration Continue pour OpenShift",
                 "Formation de l’équipe de développement côté client"
             ],
-            "environment": ["Sugar 12.0", "Php 8", "MySQL", "OpenShift", "Red Hat SSO", "3Scale", "Tekton", "Buildah", "SonarQube", "Nexus"]
+            "environment": ["OpenShift", "Red Hat SSO", "3Scale", "Tekton", "Buildah", "SonarQube", "Nexus", "Php 8", "MySQL"]
         },
         {
             "start": "Septembre 2015",
@@ -318,7 +304,21 @@ function Resume() {
                 "Formation et encadrement d’une équipe de développeurs juniors",
                 "Conseils en architecture et choix techniques"
             ],
-            "environment": ["Sugar 12.0", "Php 8", "MySQL", "Docker", "Keycloak", "Spring Boot", "Thorntail", "Quarkus", "Apache Camel", "Maven", "REST", "OAuth2/OpenID-Connect"]
+            "environment": ["Docker", "Keycloak", "Spring Boot", "Thorntail", "Quarkus", "Apache Camel", "Maven", "REST", "OAuth2/OpenID-Connect", "Php 8", "MySQL"]
+        },
+        {
+            "start": "Septembre 2020",
+            "end": "Décembre 2024",
+            "title": "Expert Technique",
+            "company": "ITs4U Luxembourg - ICADE Foncière",
+            "sector": "Immobilier d'Entreprise",
+            "activities": [
+                "Développement de personnalisations sur le CRM Sugar (Php 8, JavaScript)",
+                "Optimisation et refonte des flux d’imports de données",
+                "Encadrement technique de l’équipe de développement en place",
+                "Choix techniques"
+            ],
+            "environment": ["Php 8", "MySQL", "Docker", "REST"]
         },
         {
             "start": "Novembre 2015",
@@ -330,7 +330,7 @@ function Resume() {
                 "Analyse et conseil technique sur l’intégration avec d’autres systèmes",
                 "Support et encadrement technique de l’équipe ITs4U en charge du projet"
             ],
-            "environment": ["Sugar 7.x", "PHP 5", "HTML 5", "Javascript", "JSON", "REST", "MySQL"]
+            "environment": ["PHP 5", "HTML 5", "Javascript", "JSON", "REST", "MySQL"]
         },
         {
             "start": "Mai 2016",
@@ -341,7 +341,7 @@ function Resume() {
             "activities": [
                 "Développement middleware : interfaçage du CRM Sugar avec le SI via RedHat Fuse"
             ],
-            "environment": ["Sugar 7.x", "RedHat Fuse", "Maven", "PHP 5", "HTML 5", "Javascript", "JSON", "REST", "MySQL"]
+            "environment": ["RedHat Fuse", "Maven", "PHP 5", "HTML 5", "Javascript", "JSON", "REST", "MySQL"]
         },
         {
             "start": "Octobre 2014",

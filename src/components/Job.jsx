@@ -27,6 +27,15 @@ function Job({ job }) {
                     }
                 </ul>
             </div>
+            <div className="flex flex-wrap my-4 gap-2">
+
+                {
+                    job.environment.map((tool, index) => {
+                        return (<span className="bg-gray-500/50 shadow-lgl px-2 py-1 rounded-md text-xs font-bold">{tool}</span>)
+                    })
+                }
+
+            </div>
         </div >
     );
 }

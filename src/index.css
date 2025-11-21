@@ -48,7 +48,7 @@
     }
 
     .resume-block {
-        @apply h-full pt-5 mt-8 shadow-3xl p-4 rounded-lg hover:bg-gray-600/50 transition-all duration-200;
+        @apply h-full pt-5 mt-8 shadow-3xl p-4 rounded-lg hover:bg-gray-700/50 transition-all duration-200;
     }
 
     .resume-block-title {
