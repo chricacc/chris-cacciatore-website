@@ -24,7 +24,8 @@ export default {
         88: '22rem',
       },
       boxShadow: {
-        '3xl': '0 0 50px rgba(0,0,0,0.8);',
+        '3xl': '0 0 30px rgba(0,0,0,0.8);',
+        '2xl': '0 0 20px rgba(0,0,0,0.8);',
       },
       fontFamily: {
         'roboto': ['Roboto-condensed', 'Roboto'],

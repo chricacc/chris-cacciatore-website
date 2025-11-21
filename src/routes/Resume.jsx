@@ -60,7 +60,7 @@ function Resume() {
                     "level": 90
                 }, {
                     "name": "Spring Boot",
-                    "level": 70
+                    "level": 80
                 }, {
                     "name": "Hibernate",
                     "level": 70
@@ -246,6 +246,22 @@ function Resume() {
 
     let jobs = [
         {
+            "start": "Janvier 2025",
+            "end": "Présent",
+            "title": "Expert Technique - Tech Lead",
+            "company": "ITs4U Luxembourg - BIL (Banque Internationale à Luxembourg)",
+            "sector": "Banque",
+            "activities": [
+                "Cadrage technique d'un upgrade Spring Boot de masse sur un parc de 90 microservices",
+                "Audit préalable et état des lieux sur la dette technique, ainsi que les pratiques DevOps",
+                "Recommandations de pratiques et d'outils",
+                "Encadrement technique d'une équipe de développeurs réalisant les upgrades",
+                "Encadrement technique d'une équipe de développeurs participant à divers projets métier",
+                "Animation d'ateliers Craft et présentations techniques"
+            ],
+            "environment": ["OpenShift", "Java", "Spring Boot", "Microservices", "REST", "Accelerate"]
+        },
+        {
             "start": "Janvier 2023",
             "end": "Février 2024",
             "title": "Architecte Technique",
@@ -262,7 +278,7 @@ function Resume() {
         },
         {
             "start": "Septembre 2020",
-            "end": "Présent",
+            "end": "Décembre 2024",
             "title": "Expert Technique",
             "company": "ITs4U Luxembourg - ICADE Foncière",
             "sector": "Immobilier d'Entreprise",
@@ -276,7 +292,7 @@ function Resume() {
         },
         {
             "start": "Décembre 2015",
-            "end": "Présent",
+            "end": "Décembre 2024",
             "title": "Expert Technique",
             "company": "ITs4U Luxembourg - Batigère",
             "sector": "Immobilier social",

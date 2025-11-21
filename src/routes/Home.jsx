@@ -22,7 +22,7 @@ function Home() {
         { name: "#devops", link: "https://en.wikipedia.org/wiki/DevOps" },
         { name: "#fullstack", link: "https://www.w3schools.com/whatis/whatis_fullstack.asp" },
         { name: "#cleancode", link: "https://www.youtube.com/watch?v=eoK0NE92EOk" },
-        { name: "#softwarecraftmanship", link: "https://en.wikipedia.org/wiki/Software_craftsmanship" },
+        { name: "#softwarecraft", link: "https://en.wikipedia.org/wiki/Software_craftsmanship" },
 
     ]
 
@@ -34,7 +34,7 @@ function Home() {
                 <h1 className="text-5xl md:text-8xl md:mt-8 font-bold">Software Engineer</h1>
                 <div className="text-lg mt-8 ml-1">
                     <p className="mb-4">J'ai passé les 10 dernières années à concevoir des systèmes informatiques en utilisant des technologies variées.</p>
-                    <p> Ne me demandez pas quel est mon framework. Mon framework, c'est celui qui fera le job pour VOTRE besoin. Les frameworks ne sont que des outils, quand je ne connais pas, j'apprends!</p>
+                    <p> Ne me demandez pas quel est mon framework. Mon framework, c'est celui qui fera le job pour le besoin du projet. Les frameworks ne sont que des outils, quand je ne connais pas, j'apprends!</p>
                     <ul className="my-4 ml-1 flex flex-wrap gap-4 font-italic">
                         {
                             tags.map((tag) =>
@@ -43,8 +43,6 @@ function Home() {
                                 </Link>)
                         }
                     </ul>
-
-                    <p className="mt-4 text-sm"> Ps : Si j'ai postulé chez vous, il y a des chances que VOTRE framework fasse bientôt partie de ma Toolbox... S'il n'y est pas déjà!</p>
                 </div>
                 <h2 className="mt-12 text-xl md:text-2xl font-bold">Ma Toolbox idéale <span className="text-sm">(car on a tous des préférences)</span></h2>
                 <Toolbox tools={tools} />
